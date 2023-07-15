@@ -1,1 +1,1 @@
-quiz-w.netlify.app
+https://quiz-w.netlify.app/
