@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body{
+  margin:0;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--bodyColor);
+}
+
+@media only screen and (min-width: 768px) and  (max-width: 1024px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories-container > #category-1 > .button{ 
+    min-width: 700px;
+  }
+
+  .categories-container > h1,
+  .game-container > h1{
+    font-size: 3rem;
+  }
+
+  .game-container > .categories-container > h1,
+  .game-container > .questions-container > h1{
+    font-size: 3.5rem;
+    margin-top:20px
+  }
+
+  .result-congrats{
+    font-size: 3rem
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .button {
+    font-size: 3rem;
+  }
+  .categories-container > #category-1 > .button{ 
+    min-width: 700px;
+  }
+
+  .categories-container > div > .button {
+    min-width: 50%;
+    font-size: 2.4rem;
+}
+
+.progress-bar{
+  position: absolute;
+  left:0
+}
+
+.result-div{
+  min-height: 700px;
+}
+
+.result-congrats{
+  font-size: 3rem
+}
+
+.result-encouragement{
+  font-size:2rem
+}
+}
+
+#root{
+  padding:40px 20px;
+  text-align: center;
+  max-width: 700px;
+  min-width: 280px
+}
+
+.home-page,
+.result-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button.home{
+  background-color: #C6371A;
+  color:#FFFFFF;
+  transition: 0.3s;
+  animation: drop-in 1800ms ease 600ms backwards;
+  overflow: hidden;
+}
+
+.button.home:hover{
+  transform: scale(1.1);
+}
+
+.difficulty-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.question-container,
+.answers-container{
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  
+}
+
+.home-page-text{
+  font-size: 15vh;
+  margin:0;
+  color:#C6371A;
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+   opacity: 0;
+   transform: translateY(-100px);
+  }
+  to {
+   opacity: 1;
+   transform: translate(0px);
+  }
+ }
+ 
+.progress-bar {
+  height: 10px;
+  background-color: #C6371A;
+  transition: width 0.5s;
+  border-radius: 5px;
+  position: absolute;
+  top: 3vh
+}
+
+#category-2,
+#category-3,
+#category-4,
+#category-5{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  gap:20px;
+  width: 100%;
+}
+
+.categories-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+/*******BUTTON DESIGN*******/
+
+.button{
+  margin: 0.45rem 0;
+  font-size:1.8rem;
+  height:15vh;
+  min-width: 100%;
+  background-color: #D3D3D3 ;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .categories-container > div > .button{
+    min-width: 50%;
+    font-size: 2.4rem;
+  }
+
+  .button {
+    font-size: 2.6rem;
+  }
+}
+
+.button.result,
+.button.next{
+  background-color:black;
+  color: #FFFFFF;
+  height: 9vh;
+}
+
+.button#easy{
+  margin-bottom:21px
+}
+
+#category-1 > button {
+  background-color: #C6371A;
+  color: #FFFFFF;
+  width: 41.8vh;
+}
+
+@media only screen and (min-width: 327px) and (max-width: 767px) {
+  .categories-container > #category-1 {
+    min-width: 100%;
+  }
+  .categories-container > #category-1 > .button{ 
+    width: 100%;
+  }
+}
+
+.question-title {
+  font-size: 2rem;
+  margin-bottom:0
+}
+
+.instructions-text,
+.category-title{
+  font-size:2rem;
+  margin-bottom: 21px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.category-title{
+  margin-top:12.25px;
+  margin-bottom:0px
+}
+
+#any{
+  background-color: #C6371A;
+  color:#FFFFFF;
+  width: 20.5rem;
+}
+
+.result-div{
+  color: #FFFFFF;
+}
+
+.result-text{
+  font-size: 15vh;
+  margin:0
+}
+
+.correct-answers-text{
+  margin: 0;
+}
