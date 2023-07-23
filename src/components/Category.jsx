@@ -1,16 +1,16 @@
 import React from "react";
 
-export default function Category(props){
-    const { handleClick, toggleState, name } = props;
+export default function Category({handleClick, toggleState, name, id){
 
     const handleButtonClick = () => {
       handleClick()
       toggleState()
     };
+    
    return(
         <button 
-        id={props.id} 
+        id={id} 
         className="button" 
-        onClick={handleButtonClick}>{props.name}</button>
+        onClick={handleButtonClick}>{name}</button>
     )
 }
