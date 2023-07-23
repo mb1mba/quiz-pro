@@ -251,7 +251,6 @@ return(
       startButtonPressed  && categoryChoosen && difficultyChoosen && !isGameOver? (
         <div className="game-container">
           <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-          {console.log(playerAnswers)}
           {questionsElement[questionsOrder]}
         </div>
         ): startButtonPressed  && categoryChoosen && difficultyChoosen && isGameOver && !showCorrectAnswers? 
